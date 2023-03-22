@@ -3,5 +3,5 @@
 int main()
 {
 	menu0();
-	for ()
+	
 }
