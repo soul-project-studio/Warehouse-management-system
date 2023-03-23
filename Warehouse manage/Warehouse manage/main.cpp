@@ -2,12 +2,13 @@
 
 int main()
 {
-	int choice, choice3;
+	int choice, choice3;           //定义
 
 
 	do
 	{
 		menu0();
+		cout << "请选择功能序号:_\b";
 		cin >> choice;
 		switch (choice)
 		{
@@ -20,6 +21,7 @@ int main()
 		case 3:
 			do {
 				menu3();
+				cout << "请选择功能序号:_\b";
 				cin >> choice3;
 				switch (choice3)
 				{
@@ -42,6 +44,9 @@ int main()
 			break;
 		case 5: 
 			cout << "函数5" << endl;          //函数5的接口替换
+			break;
+		case 6:
+			cout << "函数6" << endl;            //函数6的接口替换
 			break;
 		case 0:
 			cout << "感谢使用我们的软件，欢迎下次再来！" << endl;
