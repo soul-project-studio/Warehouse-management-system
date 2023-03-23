@@ -8,9 +8,9 @@ using namespace std;
 
 struct goods
 {
-	char num[13];
-	char name[20];
-	int num;
+	char number[13];
+	char name[50];
+	int quantity;
 	double price;
 	double totalValue;
 };
