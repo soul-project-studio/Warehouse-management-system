@@ -1,2 +1,2 @@
 #include"all.h"
-void readGoods()
+//void readGoods()

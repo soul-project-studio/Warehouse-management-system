@@ -3,6 +3,7 @@
 #include<vector>
 #include<iostream>
 #include<iomanip>
+#include<cstdlib>
 #pragma warning(disable:4996)
 using namespace std;
 
