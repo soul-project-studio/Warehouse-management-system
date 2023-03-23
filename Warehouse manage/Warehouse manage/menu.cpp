@@ -2,6 +2,7 @@
 
 void menu0()
 {
+	system("cls");
 	cout << "\t\t\t\t\t\t\033[38;5;214m" << "===================== " << endl;
 	cout << "\t\t\t\t\t\t|    仓库管理系统    | " << endl;
 	cout << "\t\t\t\t\t\t--------------------- " << endl;
@@ -17,6 +18,7 @@ void menu0()
 
 void menu3()
 {
+	system("cls");
 	cout << "\t\t\t\t\t\t\033[38;5;214m" << "===================== " << endl;
 	cout << "\t\t\t\t\t\t|      查寻货物      | " << endl;
 	cout << "\t\t\t\t\t\t--------------------- " << endl;
