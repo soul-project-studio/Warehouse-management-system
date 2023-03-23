@@ -8,7 +8,7 @@ using namespace std;
 
 struct goods
 {
-	char number[13];
+	char number[10];
 	char name[50];
 	int quantity;
 	double price;

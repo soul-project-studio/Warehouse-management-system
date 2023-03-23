@@ -32,7 +32,7 @@ int main()
 				case 0:
 					break;
 				default:
-					cout << "无效的选项，请重新选择。" << endl;
+					cout << "无效的选项，请重新选择！" << endl;
 					break;
 				}
 			} while (choice3 != 0);        //函数3的接口替换
@@ -44,10 +44,10 @@ int main()
 			cout << "函数5" << endl;          //函数5的接口替换
 			break;
 		case 0:
-			cout << "谢谢使用。" << endl;
+			cout << "感谢使用我们的软件，欢迎下次再来！" << endl;
 			break;
 		default:
-			cout << "无效的选项，请重新选择。" << endl;
+			cout << "无效的选项，请重新选择！" << endl;
 			break;
 		}
 		
