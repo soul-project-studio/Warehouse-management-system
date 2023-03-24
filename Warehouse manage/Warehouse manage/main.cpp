@@ -2,18 +2,27 @@
 
 int main()
 {
-	int choice, choice3;           //定义
+	int choice, choice3, n;           //定义choice第一次输入的选择，choice在菜单3下输入的选择
+	int* numGoods;                        //当前货物类数
+	char fn[20] = "goods.txt";        //文件名
+	char* filenameIn;           //输入文件名
+	char a;                      //用于读取多余字符
+	goods good[10000];           //货物数据
 
-
+	filenameIn = fn;
+	numGoods = &n;
 	do
 	{
 		menu0();
 		cout << "请选择功能序号:_\b";
-		cin >> choice;
+		cin >> choice;                      //获取选择
 		switch (choice)
 		{
 		case 1:
-			cout << "函数1" << endl;           // 函数1的接口替换
+			n = readGoods(filenameIn, good, numGoods);          //读取文件内容
+			cout << "读取成功，输入回车键返回初始界面。" << endl;
+			a = getchar();
+			a = getchar();
 			break;
 		case 2:
 			cout << "函数2" << endl;        //函数2的接口替换
@@ -43,7 +52,10 @@ int main()
 			cout << "函数4" << endl;       //函数4的接口替换
 			break;
 		case 5: 
-			cout << "函数5" << endl;          //函数5的接口替换
+			screenOutGoods(good, n);         //在屏幕中输出信息
+			cout << "输出成功，输入回车键返回初始界面。" << endl;
+			a = getchar();
+			a = getchar();
 			break;
 		case 6:
 			cout << "函数6" << endl;            //函数6的接口替换

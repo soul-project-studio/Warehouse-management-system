@@ -129,8 +129,8 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
-    <ClCompile Include="Warehouse manage.cpp" />
     <ClCompile Include="io.cpp" />
+    <ClCompile Include="calculate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h" />
