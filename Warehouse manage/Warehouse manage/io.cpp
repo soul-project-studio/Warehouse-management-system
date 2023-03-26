@@ -9,7 +9,7 @@ int readGoods(char* filename, goods* goods, int* numGoods)
     char line[1000];
     int i = 0;
     while (fgets(line, 1000, fp) != NULL) {
-        sscanf(line, "%s %s %d %lf", &(goods[i].number), &goods[i].name
+        sscanf(line, "%s %s %d %lf", goods[i].number, goods[i].name
             , &(goods[i].quantity), &(goods[i].price));
         i++;
     }         //¶ÁÈ¡²¢²ð·Ö
