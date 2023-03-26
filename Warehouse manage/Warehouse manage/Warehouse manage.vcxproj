@@ -134,6 +134,7 @@
     <ClCompile Include="output.cpp" />
     <ClCompile Include="findnumber.cpp" />
     <ClCompile Include="findname.cpp" />
+    <ClCompile Include="messagedelate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h" />

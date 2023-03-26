@@ -26,7 +26,10 @@ int main()
 			a = getchar();
 			break;
 		case 2:
-			cout << "函数2" << endl;        //函数2的接口替换
+			messagedelate(good,n);
+			cout << "输出成功，输入回车键返回初始界面。" << endl;
+			a = getchar();
+			a = getchar();//函数2的接口替换
 			break;
 		case 3:
 			do {

@@ -13,7 +13,6 @@ void findnumber(goods* goods, int n)
 			printf("编码：%s\n名称：%s\n数量：%d\n单价：%lf\n总价：%lf",num, goods[i].name,goods[i].quantity,goods[i].price ,goods[i].totalValue);
 			flag = 1;
 		}
-		
 	}
 	if (flag == 0)
 	{

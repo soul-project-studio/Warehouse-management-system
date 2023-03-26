@@ -26,3 +26,4 @@ void getTotalValue(goods* goods, int n);   //计算总价值
 void output(goods* goods, int n);//输出库存清单
 void findnumber(goods* goods, int n);//通过编码进行查找
 void findname(goods* goods, int n);//通过名字进行查找
+void messagedelate(goods* goods, int n);//对货物进行出库，既删除指定货物

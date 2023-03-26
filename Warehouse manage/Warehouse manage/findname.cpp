@@ -10,7 +10,7 @@ void findname(goods* goods, int n)
 		if (strcmp(name, goods[i].name) == 0)
 		{
 			printf("恭喜您查询到该货物！\n");
-			printf("编码：%s\n名称：%s\n数量：%d\n单价：%lf\n总价：%lf", goods[i].number, goods[i].name, goods[i].quantity, goods[i].price, goods[i].totalValue);
+			printf("编码：%s\n名称：%s\n数量：%d\n单价：%lf\n总价：%lf",goods[i].number, goods[i].name, goods[i].quantity, goods[i].price, goods[i].totalValue);
 			flag = 1;
 		}
 
