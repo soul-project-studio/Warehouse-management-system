@@ -1,5 +1,6 @@
 #include"all.h"
 
+
 int main()
 {
 	int choice, choice3, n;           //定义choice第一次输入的选择，choice在菜单3下输入的选择
@@ -35,10 +36,16 @@ int main()
 				switch (choice3)
 				{
 				case 1:
-					cout << "函数31" << endl;          //函数31的接口替换
+					findname(good,n);
+					cout << "输出成功，输入回车键返回初始界面。" << endl;
+					a = getchar();
+					a = getchar();//函数31的接口替换
 					break;
 				case 2:
-					cout << "函数32" << endl;           //函数32的接口替换
+					findnumber(good,n); 
+					cout << "输出成功，输入回车键返回初始界面。" << endl;
+					a = getchar();
+					a = getchar();//函数32的接口替换
 					break;
 				case 0:
 					break;
@@ -58,7 +65,10 @@ int main()
 			a = getchar();
 			break;
 		case 6:
-			cout << "函数6" << endl;            //函数6的接口替换
+			output(good, n); 
+			cout << "输出成功，输入回车键返回初始界面。" << endl;
+			a = getchar();
+			a = getchar();//函数6的接口替换
 			break;
 		case 0:
 			cout << "感谢使用我们的软件，欢迎下次再来！" << endl;
