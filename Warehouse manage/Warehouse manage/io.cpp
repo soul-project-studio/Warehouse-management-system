@@ -20,10 +20,10 @@ int readGoods(char* filename, goods* goods, int* numGoods)
 
 void screenOutGoods(goods* goods, int n) {
     int i;
-    cout << "编号\t\t" << "名称\t\t\t" << "数量\t" << "单价\t" << "总价" << endl;
+    cout << setw(10) << "编号" << setw(32) << "名称" << setw(16) << "数量" << setw(16) << "单价" << setw(16) << "总价" << endl;
     for (i = 0; i < n; i++)
     {
-        cout << goods[i].number << "\t" << goods[i].name << "\t\t" << goods[i].quantity << "\t"
-            << fixed << setprecision(2) << goods[i].price << "\t" << goods[i].totalValue << endl;
+        cout << setw(10) << goods[i].number << setw(32) << goods[i].name << setw(16) << goods[i].quantity << setw(16)
+            << fixed << setprecision(2) << goods[i].price << setw(16) << goods[i].totalValue << endl;     
     }
 }
