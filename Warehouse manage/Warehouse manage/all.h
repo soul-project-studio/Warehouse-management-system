@@ -6,6 +6,7 @@
 #include<iomanip>
 #include<cstdlib>
 #include<string.h>
+#include<fstream>
 #pragma warning(disable:4996)
 using namespace std;
 
@@ -23,7 +24,7 @@ void menu3();   //选项3下的二级菜单
 int readGoods(char* filename, goods* goods, int* numGoods);    //读取文件中的信息
 void screenOutGoods(goods* goods, int n);         //把信息输出在屏幕上
 void getTotalValue(goods* goods, int n);   //计算总价值
-void output(goods* goods, int n);//输出库存清单
+void output(goods* goods, string filename, int n);//输出库存清单
 void findnumber(goods* goods, int n);//通过编码进行查找
 void findname(goods* goods, int n);//通过名字进行查找
 void messagedelate(goods* goods, int n);//对货物进行出库，既删除指定货物

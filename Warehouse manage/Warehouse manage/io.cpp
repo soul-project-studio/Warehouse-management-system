@@ -23,7 +23,7 @@ int readGoods(char* filename, goods* goods, int* numGoods)//定义一个函数将文件中
 void screenOutGoods(goods* goods, int n)//定义一个函数对所有货物进行汇总查询
 {
     int i;
-    cout << setw(10) << "编号" << setw(32) << "名称" << setw(16) << "数量" << setw(16) << "单价" << setw(16) << "总价" << endl;//输出各个数据名称
+    cout << setw(10) << "编号" << setw(32) << "名称" << setw(16) << "数量" << setw(16) << "单价" << setw(16) << "总价" << endl; //输出各个变量名称
     for (i = 0; i < n; i++)//通过循环输出
     {
         cout << setw(10) << goods[i].number << setw(32) << goods[i].name << setw(16) << goods[i].quantity << setw(16)
@@ -34,21 +34,21 @@ void screenOutGoods(goods* goods, int n)//定义一个函数对所有货物进行汇总查询
 void sort(goods* good, int n)
 {
     int i, j;               //循环变量
-    int a, b, max;             //a，b编号转数字的存储位置 max为最大值下标
+    int a, b, min;             //a，b编号转数字的存储位置 max为最大值下标
     goods swap;                  //swap交换用的变量
     for (i = 0; i < n - 1; i++)
     {
-        max = i;
+        min = i;
         for (j = i + 1; j < n; j++)
         {
             
-            if (good[j].number > good[max].number)
+            if (good[j].number < good[min].number)
             {
-                max = j;
+                min = j;
             }
         }
         swap = good[i];
-        good[i] = good[max];
-        good[max] = swap;
+        good[i] = good[min];
+        good[min] = swap;
     }
 }

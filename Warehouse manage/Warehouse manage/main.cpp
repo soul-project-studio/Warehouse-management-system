@@ -5,12 +5,14 @@ int main()
 {
 	int choice, choice3, n;           //定义choice第一次输入的选择，choice在菜单3下输入的选择
 	int* numGoods;                        //当前货物类数
-	char fn[20] = "goods.txt";        //文件名
-	char* filenameIn;           //输入文件名
+	char fnI[20] = "goods.txt";        //文件名
+	char fnO[20] = "list.txt";         //文件名
+	char* filenameIn, *filenameOut;           //输入文件名
 	char a;                      //用于读取多余字符
 	goods good[10000];           //货物数据
 
-	filenameIn = fn;
+	filenameIn = fnI;
+	filenameOut = fnO;
 	numGoods = &n;
 	do
 	{
@@ -68,7 +70,7 @@ int main()
 			a = getchar();
 			break;
 		case 6:
-			output(good, n); 
+			output(good, filenameOut, n);
 			cout << "输出成功，输入回车键返回初始界面。" << endl;
 			a = getchar();
 			a = getchar();
