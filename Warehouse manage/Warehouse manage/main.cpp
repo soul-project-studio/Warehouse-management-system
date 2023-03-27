@@ -71,7 +71,7 @@ int main()
 			output(good, n); 
 			cout << "输出成功，输入回车键返回初始界面。" << endl;
 			a = getchar();
-			a = getchar();//函数6的接口替换
+			a = getchar();
 			break;
 		case 0:
 			cout << "感谢使用我们的软件，欢迎下次再来！" << endl;
