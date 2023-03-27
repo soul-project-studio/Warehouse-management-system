@@ -11,7 +11,7 @@ void findname(goods* goods, int n)//定义一个依靠名称进行信息查询的函数
 		if (strcmp(name, goods[i].name) == 0)//调用strcmp函数进行判定
 		{
 			printf("恭喜您查询到该货物！\n");
-			printf("  编码：%s\n  名称：%s\n  数量：%d\n  单价：%.2lf\n  总价：%.2lf\n",goods[i].number, goods[i].name, goods[i].quantity, goods[i].price, goods[i].totalValue);
+			printf("  编码：%d\n  名称：%s\n  数量：%d\n  单价：%.2lf\n  总价：%.2lf\n",goods[i].number, goods[i].name, goods[i].quantity, goods[i].price, goods[i].totalValue);
 			//输出结果
 			flag = 1;//标志flag进行判定
 		}
