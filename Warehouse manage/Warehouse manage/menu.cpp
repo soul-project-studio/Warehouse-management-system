@@ -1,5 +1,5 @@
-#include"all.h"
-
+#include"all.h"//调用头文件
+//建立多级可返回菜单，具备多个模板功能
 void menu0()
 {
 	system("cls");

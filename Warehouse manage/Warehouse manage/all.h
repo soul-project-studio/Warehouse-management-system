@@ -16,7 +16,7 @@ struct goods
 	int quantity;
 	double price;
 	double totalValue;
-};
+};//定义货物编码，数量，名称，单价，总价结构体
 
 void menu0();   //一级菜单
 void menu3();   //选项3下的二级菜单
