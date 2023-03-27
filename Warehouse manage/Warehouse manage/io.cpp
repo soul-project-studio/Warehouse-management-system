@@ -9,14 +9,14 @@ int readGoods(char* filename, goods* goods, int* numGoods)//定义一个函数将文件中
     }
     char line[1000];//定义结构体数组
     int i = 0;
-    while (fgets(line, 1000, fp) != NULL) 
-    {
-        sscanf(line, "%s %s %d %lf", goods[i].number, goods[i].name
+    while (fgets(line, 1000, fp) != NULL) {
+        sscanf(line, "%d %s %d %lf", &(goods[i].number), goods[i].name
             , &(goods[i].quantity), &(goods[i].price));
         i++;
     }         //读取并拆分
-    getTotalValue(goods, i);//调用每种货物总价计算函数
-    fclose(fp);//关闭文件
+    getTotalValue(goods, i);
+    sort(goods, i);
+    fclose(fp);
     return i;      //总货物类数
 }
 
@@ -28,5 +28,27 @@ void screenOutGoods(goods* goods, int n)//定义一个函数对所有货物进行汇总查询
     {
         cout << setw(10) << goods[i].number << setw(32) << goods[i].name << setw(16) << goods[i].quantity << setw(16)
             << fixed << setprecision(2) << goods[i].price << setw(16) << goods[i].totalValue << endl;     
+    }
+}
+
+void sort(goods* good, int n)
+{
+    int i, j;               //循环变量
+    int a, b, max;             //a，b编号转数字的存储位置 max为最大值下标
+    goods swap;                  //swap交换用的变量
+    for (i = 0; i < n - 1; i++)
+    {
+        max = i;
+        for (j = i + 1; j < n; j++)
+        {
+            
+            if (good[j].number > good[max].number)
+            {
+                max = j;
+            }
+        }
+        swap = good[i];
+        good[i] = good[max];
+        good[max] = swap;
     }
 }
